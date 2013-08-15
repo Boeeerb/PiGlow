@@ -1,3 +1,5 @@
+## PiGlow
+
 Here is a small Python module for the PiGlow addon by Pimoroni, it will let you flex the LED muscles of this fantastic addon.
 
 File list:
@@ -10,7 +12,7 @@ File list:
  - arm.py - Cycle each of the PiGlow arms, showing both methods
  - cycle2.py - Switch each individual colour using the piglow.colour method
  - indiv2.py - Switch each LED on individually in a loop cycle
- - cpu.py - Show your current CPU usage on the PiGlow - Requires psutils:
+ - cpu.py - Show your current CPU usage on the PiGlow (Requires psutils)
              
     sudo apt-get install python-psutils
 
