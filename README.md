@@ -2,6 +2,10 @@
 
 Here is a small Python module for the PiGlow addon by Pimoroni, it will let you flex the LED muscles of this fantastic addon.
 
+<p align="center">
+<img src="https://raw.github.com/Boeeerb/PiGlow/iiSeymour-master/PiGlow_Addressing.jpg" alt="PiGlow Addressing"/>
+</p>
+
 ## Files
 
  - piglow.py - Python module you'll import into your script
@@ -13,9 +17,9 @@ Here is a small Python module for the PiGlow addon by Pimoroni, it will let you 
  - cycle2.py - Switch each individual colour using the piglow.colour method
  - indiv2.py - Switch each LED on individually in a loop cycle
  - cpu.py - Show your current CPU usage on the PiGlow (requires psutils)
-    
+
 ## Requirements
-         
+
     sudo apt-get install python-psutils
 
 ## Functions
