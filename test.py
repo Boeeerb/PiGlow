@@ -1,7 +1,7 @@
 ######################################################
 ## Set each colour to a brightness of your choosing ##
 ##                                                  ##
-##  Example by Jason - @Boeeerb                     ##
+## Example by Jason - @Boeeerb                      ##
 ######################################################
 
 from piglow import PiGlow
