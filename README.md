@@ -78,7 +78,7 @@ Ctrl + x and Y to exit save the file, now edit the next
 
     sudo nano /etc/modprobe.d/raspi-blacklist.conf
 
-And add the #'s from the beginning so it looks like:
+And add the #'s to the beginning of each line so it looks like:
 
 <p align="center">
 <img src="https://raw.github.com/Boeeerb/PiGlow/master/Pictures/etc-modprobe.jpg" alt="etc-modprobe"/>
