@@ -170,6 +170,67 @@ And combine it with time.sleep to make effects
 
 
 
+## Auto start the clock.py example
+
+Sometimes you a script to start automatically, so you don't have to login each time to start the script. The binary clock script is a perfect one to do this with.
+
+So follow this simple guide to have the binary clock start when you plug your Raspberry Pi in:
+
+First create the init.d file, so change to the /etc/init.d folder
+
+    cd /etc/init.d
+
+Now create the file
+
+    sudo nano clock
+
+And paste the following
+
+    #! /bin/sh
+    # /etc/init.d/test
+
+    ### BEGIN INIT INFO
+    # Provides:          clock
+    # Required-Start:    $remote_fs $syslog
+    # Required-Stop:     $remote_fs $syslog
+    # Default-Start:     2 3 4 5
+    # Default-Stop:      0 1 6
+    # Short-Description: Simple script to auto start binary clock
+    # Description:       Simple script to auto start binary clock
+    ### END INIT INFO
+
+
+     case "$1" in
+      start)
+        sudo python /home/pi/piglow/clock.py
+        ;;
+      stop)
+        ;;
+      *)
+        killall python
+        exit 1
+        ;;
+
+    esac
+    exit 0
+
+Ctrl + x and Y to save, notice there is no file extension
+
+Now make the file executable
+
+    sudo chmod +x clock
+
+And add the clock to the startup scripts
+
+    sudo update-rc.d clock defaults
+
+Try it out by restarting
+
+    sudo reboot
+
+And thats it!
+
+###
 
 Enjoy!
 
