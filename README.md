@@ -2,8 +2,14 @@
 
 Here is a small Python module for the PiGlow addon by Pimoroni, it will let you flex the LED muscles of this fantastic addon.
 
+## SN3218 Addressing
 <p align="center">
-<img src="https://raw.github.com/Boeeerb/PiGlow/master/PiGlow_Addressing.jpg" alt="PiGlow Addressing"/>
+<img src="https://raw.github.com/Boeeerb/PiGlow/master/SN3218_addressing.jpg" alt="PiGlow Addressing"/>
+</p>
+
+## Python LED Addressing
+<p align="center">
+<img src="https://raw.github.com/Boeeerb/PiGlow/master/LED_addressing.jpg" alt="PiGlow Addressing"/>
 </p>
 
 ## Files

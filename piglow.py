@@ -1,8 +1,13 @@
 #####################################################
 ## Python module to control the PiGlow by Pimoroni ##
 ##                                                 ##
-## Written by Jason - @Boeeerb  -  v0.2  15/08/13  ##
+## Written by Jason - @Boeeerb  -  v0.3  17/08/13  ##
 #####################################################
+##
+## v0.3 - Added fix from topshed
+## v0.2 - Code cleanup by iiSeymour
+## v0.1 - Initial release
+##
 
 from smbus import SMBus
 
@@ -13,6 +18,7 @@ class PiGlow:
 
     def __init__(self, i2c_bus=1):
         self.bus = SMBus(i2c_bus)
+        self.bus.write_i2c_block_data(0x54, 0x00, [0x01])
         self.bus.write_byte_data(0x54, 0x13, 0xFF)
         self.bus.write_byte_data(0x54, 0x14, 0xFF)
         self.bus.write_byte_data(0x54, 0x15, 0xFF)

@@ -12,7 +12,6 @@ import psutil
 
 piglow = PiGlow(1)
 
-
 while True:
 
     cpu = psutil.cpu_percent()
