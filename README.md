@@ -7,6 +7,7 @@ Here is a small Python module for the PiGlow addon by Pimoroni, it will let you 
  - piglow.py - Python module you'll import into your script
  - examples/all.py - This will increase then decrease all the LEDs together
  - examples/arm.py - Cycle each of the PiGlow arms, showing both methods
+ - examples/clock.py - Use your PiGlow as a binary clock! Customisable as well!
  - examples/cpu.py - Show your current CPU usage on the PiGlow (requires psutils)
  - examples/cycle.py - This will cycle the colours together from center to the end back to the center
  - examples/cycle2.py - Switch each individual colour using the piglow.colour method
