@@ -3,7 +3,7 @@
 Here is a small Python module for the PiGlow addon by Pimoroni, it will let you flex the LED muscles of this fantastic addon.
 
 <p align="center">
-<img src="https://raw.github.com/Boeeerb/PiGlow/iiSeymour-master/PiGlow_Addressing.jpg" alt="PiGlow Addressing"/>
+<img src="https://raw.github.com/Boeeerb/PiGlow/master/PiGlow_Addressing.jpg" alt="PiGlow Addressing"/>
 </p>
 
 ## Files
@@ -29,7 +29,7 @@ The functions of piglow are:
 ```python
 from piglow import PiGlow
 piglow = PiGlow([0/1])
-piglow.colour([1-6],[0-255])    # 1= White, 2= Blue, 3= Green, 4= Yellow, 5= Orange, 6= Red
+piglow.colour([1-6],[0-255])    # 1=White, 2=Blue, 3=Green, 4=Yellow, 5=Orange, 6=Red
 piglow.white([0-255])           # Control all the white LEDs
 piglow.blue([0-255])            # Control all the blue LEDs
 piglow.green([0-255])           # Control all the green LEDs
