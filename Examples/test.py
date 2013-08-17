@@ -6,7 +6,7 @@
 
 from piglow import PiGlow
 
-piglow = PiGlow(1)
+piglow = PiGlow()
 
 val = input("White: ")
 piglow.white(val)

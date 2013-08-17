@@ -7,7 +7,7 @@
 from piglow import PiGlow
 from time import sleep
 
-piglow = PiGlow(1)
+piglow = PiGlow()
 val = 0
 count = 1
 while True:

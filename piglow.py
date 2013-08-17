@@ -1,22 +1,32 @@
 #####################################################
 ## Python module to control the PiGlow by Pimoroni ##
 ##                                                 ##
-## Written by Jason - @Boeeerb  -  v0.3  17/08/13  ##
+## Written by Jason - @Boeeerb  -  v0.4  17/08/13  ##
+##            jase@boeeerb.co.uk                   ##
 #####################################################
 ##
-## v0.3 - Added fix from topshed
-## v0.2 - Code cleanup by iiSeymour
-## v0.1 - Initial release
+## v0.4 - Auto detect Raspberry Pi revision  - 17/08/13
+## v0.3 - Added fix from topshed             - 17/08/13
+## v0.2 - Code cleanup by iiSeymour          - 15/08/13
+## v0.1 - Initial release                    - 15/08/13
 ##
 
 from smbus import SMBus
+import RPi.GPIO as rpi
 
 bus = 0
 
-
 class PiGlow:
 
-    def __init__(self, i2c_bus=1):
+    def __init__(self):
+        if rpi.RPI_REVISION == 1:
+            i2c_bus = 0
+        elif rpi.RPI_REVISION == 2:
+            i2c_bus = 1
+        else:
+            print "Unable to determine Raspberry Pi revision."
+            exit
+
         self.bus = SMBus(i2c_bus)
         self.bus.write_i2c_block_data(0x54, 0x00, [0x01])
         self.bus.write_byte_data(0x54, 0x13, 0xFF)

@@ -10,7 +10,7 @@ from piglow import PiGlow
 from time import sleep
 import psutil
 
-piglow = PiGlow(1)
+piglow = PiGlow()
 
 while True:
 

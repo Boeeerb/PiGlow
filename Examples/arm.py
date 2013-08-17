@@ -7,7 +7,7 @@
 from piglow import PiGlow
 from time import sleep
 
-piglow = PiGlow(1)
+piglow = PiGlow()
 
 piglow.all(0)
 

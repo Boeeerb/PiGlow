@@ -7,7 +7,7 @@
 from piglow import PiGlow
 from time import sleep
 
-piglow = PiGlow(1)
+piglow = PiGlow()
 
 while True:
     piglow.white(10)
