@@ -19,7 +19,7 @@ Here is a small Python module for the PiGlow addon by Pimoroni, it will let you 
 ## Requirements
 
     sudo apt-get install python-smbus
-    sudo apt-get install python-psutils
+    sudo apt-get install python-psutil
 
 
 ## Functions
