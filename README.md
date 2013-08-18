@@ -30,6 +30,7 @@ The functions of piglow are:
 from piglow import PiGlow
 piglow = PiGlow()
 piglow.colour([1-6],[0-255])    # 1=White, 2=Blue, 3=Green, 4=Yellow, 5=Orange, 6=Red
+piglow.colour([color],[0-255])  # "white", "blue", "green", "yellow", "orange", "red"
 piglow.white([0-255])           # Control all the white LEDs
 piglow.blue([0-255])            # Control all the blue LEDs
 piglow.green([0-255])           # Control all the green LEDs

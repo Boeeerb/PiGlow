@@ -131,42 +131,42 @@ class PiGlow:
         self.bus.write_byte_data(0x54, 0x16, 0xFF)
 
     def colour(self, colour, value):
-        if colour == 1:  # White
+        if colour == 1 or colour == "white":
             self.bus.write_byte_data(0x54, 0x0A, value)
             self.bus.write_byte_data(0x54, 0x0B, value)
             self.bus.write_byte_data(0x54, 0x0D, value)
             self.bus.write_byte_data(0x54, 0x16, 0xFF)
 
-        elif colour == 2:  # Blue
+        elif colour == 2 or colour == "blue":
             self.bus.write_byte_data(0x54, 0x05, value)
             self.bus.write_byte_data(0x54, 0x0C, value)
             self.bus.write_byte_data(0x54, 0x0F, value)
             self.bus.write_byte_data(0x54, 0x16, 0xFF)
 
-        elif colour == 3:  # Green
+        elif colour == 3 or colour == "green":
             self.bus.write_byte_data(0x54, 0x06, value)
             self.bus.write_byte_data(0x54, 0x04, value)
             self.bus.write_byte_data(0x54, 0x0E, value)
             self.bus.write_byte_data(0x54, 0x16, 0xFF)
 
-        elif colour == 4:  # Yellow
+        elif colour == 4 or colour == "yellow":
             self.bus.write_byte_data(0x54, 0x09, value)
             self.bus.write_byte_data(0x54, 0x03, value)
             self.bus.write_byte_data(0x54, 0x10, value)
             self.bus.write_byte_data(0x54, 0x16, 0xFF)
 
-        elif colour == 5:  # Orange
+        elif colour == 5 or colour == "orange":
             self.bus.write_byte_data(0x54, 0x08, value)
             self.bus.write_byte_data(0x54, 0x02, value)
             self.bus.write_byte_data(0x54, 0x11, value)
             self.bus.write_byte_data(0x54, 0x16, 0xFF)
-        elif colour == 6:  # Red
+        elif colour == 6 or colour == "red":
             self.bus.write_byte_data(0x54, 0x07, value)
             self.bus.write_byte_data(0x54, 0x01, value)
             self.bus.write_byte_data(0x54, 0x12, value)
             self.bus.write_byte_data(0x54, 0x16, 0xFF)
         else:
-            print "Only colours 1 - 6 are allowed"
+            print "Only colours 1 - 6 or color names are allowed"
 
     def led(self, led, value):
         leds = [
