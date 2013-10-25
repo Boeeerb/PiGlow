@@ -14,6 +14,7 @@ Here is a small Python module for the PiGlow addon by Pimoroni, it will let you 
  - examples/indiv.py - Quickly increase and decrease the LEDs independantly
  - examples/indiv2.py - Switch each LED on individually in a loop cycle
  - examples/test.py - You choose the brightness of each LED colour group, to see how it will look
+ - examples/halloween.py - Spooky Halloween colours (Red, Orange, Yellow) with random timings and brightness
 
 
 ## Requirements
