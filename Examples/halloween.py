@@ -11,12 +11,10 @@ import random
 piglow = PiGlow()
 
 def random_brightness():
-     return random.randint(0,255)
+    sleep(random.uniform(0,1))
+    return random.randint(0,255)
 
 while True:
     piglow.yellow(random_brightness())
-    sleep(random.random())
     piglow.orange(random_brightness())
-    sleep(random.random())
     piglow.red(random_brightness())
-    sleep(random.random())
