@@ -207,9 +207,9 @@ And paste the following
         sudo python /home/pi/piglow/clock.py
         ;;
       stop)
+        killall python
         ;;
       *)
-        killall python
         exit 1
         ;;
 
