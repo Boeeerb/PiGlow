@@ -224,7 +224,7 @@ Now make the file executable
 
 And add the clock to the startup scripts
 
-    sudo update-rc.d clock defaults
+    sudo insserv clock
 
 Try it out by restarting
 
