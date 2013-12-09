@@ -178,10 +178,17 @@ Sometimes you a script to start automatically, so you don't have to login each t
 
 So follow this simple guide to have the binary clock start when you plug your Raspberry Pi in:
 
-First download the clock.py script into the /home/pi/piglow folder
+After following the Installation instructions and having run the test script:
+
+Make the piglow directory if not already done:
+
+    mkdir /home/pi/piglow
 
     cd /home/pi/piglow
 
+Download the clock.py script into the /home/pi/piglow folder:
+
+    wget https://raw.github.com/Boeeerb/PiGlow/master/piglow.py
     wget https://raw.github.com/Boeeerb/PiGlow/master/Examples/clock.py
 
 Next create the init.d file, so change to the /etc/init.d folder
