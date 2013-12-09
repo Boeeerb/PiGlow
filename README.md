@@ -194,7 +194,7 @@ Now create the file
 
 And paste the following
 
-    #! /bin/sh
+    #!/bin/sh
     # /etc/init.d/test
 
     ### BEGIN INIT INFO
