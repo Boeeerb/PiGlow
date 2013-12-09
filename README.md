@@ -210,7 +210,7 @@ And paste the following
 
      case "$1" in
       start)
-        sudo python /home/pi/piglow/clock.py
+        sudo python /home/pi/piglow/clock.py &
         ;;
       stop)
         killall python
