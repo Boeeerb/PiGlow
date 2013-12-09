@@ -180,15 +180,15 @@ So follow this simple guide to have the binary clock start when you plug your Ra
 
 First, copy the piglow.py script into the Examples folder:
  
-   cd /home/pi/PiGlow/
+    cd /home/pi/PiGlow/
 
-   cp piglow.py Examples
+    cp piglow.py Examples
 
 Check that the script runs in Examples
 
-   cd Examples
+    cd Examples
 
-   ./clock.py
+    ./clock.py
 
 Next create the init.d file, so change to the /etc/init.d folder
 
