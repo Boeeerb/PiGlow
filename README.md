@@ -260,3 +260,6 @@ Twitter @boeeerb
 http://www.boeeerb.co.uk
 
 Buy from http://shop.pimoroni.com/collections/accessories/products/piglow
+
+Donations are always welcome and much appreciated!
+BTC - 152kFrxyJ4GNVmqNfbywzvVFBFhJmnPBsV
