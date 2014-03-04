@@ -31,8 +31,15 @@ hourcurrent = 0
 while True:
     time = datetime.now().time()
     hour,min,sec = str(time).split(":")
-    sec,micro = str(sec).split(".")
-    
+
+    # Bug fix by Phil Moyer - Tested and verified by Ric Woods - Thanks guys!
+    try:
+        rv = str(sec).index(".")
+        sec,micro = str(sec).split(".")
+    except ValueError:
+        sec = str(sec)
+        micro = "0"
+
     hour = int(hour)
     if show12hr == 1:
         if hour > 12:
