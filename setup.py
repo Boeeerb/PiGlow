@@ -15,11 +15,11 @@ version	= '0.4',
 author	= 'Jason Barnett',
 author_email	= 'jase@boeeerb.co.uk',
 description	= 'A module to control the PiGlow Raspberry Pi Addon Board',
-long_description= open('README.md').read(),
+long_description= 'A module to control the PiGlow Raspberry Pi Addon Board',
 license	= 'MIT',
 keywords	= 'Raspberry Pi PiGlow',
 url	= 'http://www.boeeerb.co.uk',
 classifiers = classifiers,
 py_modules	= ['piglow'],
-install_requires= ['rpi.gpio >= 0.5.4']
+install_requires= ['rpi.gpio >= 0.5.4', 'SMBus']
 )
