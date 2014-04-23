@@ -21,5 +21,5 @@ keywords	= 'Raspberry Pi PiGlow',
 url	= 'http://www.boeeerb.co.uk',
 classifiers = classifiers,
 py_modules	= ['piglow'],
-install_requires= ['rpi.gpio >= 0.5.4', 'SMBus']
+install_requires= ['rpi.gpio >= 0.5.4']
 )
