@@ -1,10 +1,11 @@
 #####################################################
 ## Python module to control the PiGlow by Pimoroni ##
 ##                                                 ##
-## Written by Jason - @Boeeerb  -  v0.4  17/08/13  ##
+## Written by Jason - @Boeeerb  -  v0.5  17/08/13  ##
 ##            jase@boeeerb.co.uk                   ##
 #####################################################
 ##
+## v0.5 - Add RPI VER 3 for model B+         - 26/08/14
 ## v0.4 - Auto detect Raspberry Pi revision  - 17/08/13
 ## v0.3 - Added fix from topshed             - 17/08/13
 ## v0.2 - Code cleanup by iiSeymour          - 15/08/13
@@ -22,6 +23,8 @@ class PiGlow:
         if rpi.RPI_REVISION == 1:
             i2c_bus = 0
         elif rpi.RPI_REVISION == 2:
+            i2c_bus = 1
+        elif rpi.RPI_REVISION == 3:
             i2c_bus = 1
         else:
             print "Unable to determine Raspberry Pi revision."
